@@ -1,3 +1,9 @@
+macro_helper: macro_helper{
+compatible = "zmk,behavior-macro";
+label = "macro_helper";
+#binding-cells = <0>;
+bindings = <&kp A>, <&kp A>, <&kp A>, <&kp A>, <&kp A>, <&kp A>, <&kp ENTER>;
+};
 macro_copy: macro_copy{
 compatible = "zmk,behavior-macro";
 label = "macro_copy";
@@ -52,35 +58,27 @@ label = "macro_kinesis";
 #binding-cells = <0>;
 bindings = <&kp LS(K)>, <&kp I>, <&kp N>, <&kp E>, <&kp S>, <&kp I>, <&kp S>;
 };
-macro_up_slash_mm: up_slash_mod_morph {
-compatible = "zmk,behavior-mod-morph";
+macro_up_slash_mm: macro_up_slash_mm{
+compatible = "zmk,behavior-macro";
 label = "macro_up_slash_mm";
 #binding-cells = <0>;
 bindings = <&kp UP>, <&kp SLASH>;
-mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT|MOD_RGUI|MOD_RSFT|MOD_RCTL|MOD_RALT)>;
-keep-mods = <(MOD_LSFT|MOD_RSFT)>;
 };
-macro_bksp_minus_mm: macro_bksp_minus_mm {
-compatible = "zmk,behavior-mod-morph";
+macro_bksp_minus_mm: macro_bksp_minus_mm{
+compatible = "zmk,behavior-macro";
 label = "macro_bksp_minus_mm";
 #binding-cells = <0>;
 bindings = <&kp BKSP>, <&kp MINUS>;
-mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT|MOD_RGUI|MOD_RSFT|MOD_RCTL|MOD_RALT)>;
-keep-mods = <(MOD_LSFT|MOD_RSFT)>;
 };
-macro_enter_quote_mm: macro_enter_quote_mm {
-compatible = "zmk,behavior-mod-morph";
+macro_enter_quote_mm: macro_enter_quote_mm{
+compatible = "zmk,behavior-macro";
 label = "macro_enter_quote_mm";
 #binding-cells = <0>;
 bindings = <&kp ENTER>, <&kp SQT>;
-mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_RGUI|MOD_RSFT|MOD_RCTL)>;
-keep-mods = <(MOD_LSFT|MOD_RSFT)>;
 };
-macro_escape_grave_mm: macro_escape_grave_mm {
-compatible = "zmk,behavior-mod-morph";
+macro_escape_grave_mm: macro_escape_grave_mm{
+compatible = "zmk,behavior-macro";
 label = "macro_escape_grave_mm";
 #binding-cells = <0>;
 bindings = <&kp ESC>, <&kp GRAVE>;
-mods = <(MOD_LGUI|MOD_LSFT|MOD_LCTL|MOD_LALT|MOD_RGUI|MOD_RSFT|MOD_RCTL|MOD_RALT)>;
-keep-mods = <(MOD_LSFT|MOD_RSFT)>;
 };
