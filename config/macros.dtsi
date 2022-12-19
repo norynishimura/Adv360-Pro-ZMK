@@ -1,3 +1,39 @@
+macro_leftthumb_hk2: macro_leftthumb_hk2{
+compatible = "zmk,behavior-macro";
+label = "macro_leftthumb_hk2";
+#binding-cells = <0>;
+bindings = <&macro paste>;
+};
+macro_leftthumb_hk1: macro_leftthumb_hk1{
+compatible = "zmk,behavior-macro";
+label = "macro_leftthumb_hk1";
+#binding-cells = <0>;
+bindings = <&macro copy>;
+};
+macro_rightkb_hotkey2: macro_rightkb_hotkey2{
+compatible = "zmk,behavior-macro";
+label = "macro_rightkb_hotkey2";
+#binding-cells = <0>;
+bindings = <&kp DELETE>;
+};
+macro_rightkb_hotkey1: macro_rightkb_hotkey1{
+compatible = "zmk,behavior-macro";
+label = "macro_rightkb_hotkey1";
+#binding-cells = <0>;
+bindings = <&macro helper>;
+};
+macro_leftkb_hotkey2: macro_leftkb_hotkey2{
+compatible = "zmk,behavior-macro";
+label = "macro_leftkb_hotkey2";
+#binding-cells = <0>;
+bindings = <&macro cut>;
+};
+macro_leftkb_hotkey1: macro_leftkb_hotkey1{
+compatible = "zmk,behavior-macro";
+label = "macro_leftkb_hotkey1";
+#binding-cells = <0>;
+bindings = <&kp DELETE>;
+};
 macro_helper: macro_helper{
 compatible = "zmk,behavior-macro";
 label = "macro_helper";
